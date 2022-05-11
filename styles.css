@@ -1,25 +1,57 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 html {
-    background: url(resources/daniel-sessler-AT2LBeB8FPE-unsplash.jpg) no-repeat center center fixed;
+    background: url(resources/woman_of_the_sea_-_112722\ \(Original\).mp4) no-repeat center 30%;
     font-family: 'Roboto', sans-serif;
 
 }
 
 body {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: 0;
     min-height: 100vh;
 }
 
+
+
+button {
+    padding: 12px 24px;
+    color: aliceblue;
+    background-color: inherit;
+    border-color: aliceblue;
+    border-radius: 1em;
+    border-style: solid;
+    font-size: 18px;
+    transition: all 1s;
+
+}
+
+button:hover {
+    color: #3882f6;
+    background-color: aliceblue;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Start of Header */
+
 header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     background-color: #1f2937;
     height: 8vh;
     align-items: center;
     flex-shrink: 0;
-
-
 }
 
 .top {
@@ -29,28 +61,34 @@ header {
 }
 
 .logo {
-    width: 40px;
+    width: 50px;
     height: auto;
     border-radius: 50%;
     margin-left: 30px;
 }
 
-.popular img {
-    width: 250px;
-    height: 250px;
-    border-style: solid;
-}
-
-a {
-    text-decoration: none;
-    color: cornflowerblue;
-}
-
 .link {
+    text-decoration: none;
+    font-size: 20px;
+    color: cornflowerblue;
     margin-right: 40px;
+    transition: color, font-size 1s;
 }
+
+.link:hover {
+    /* text-decoration: underline; */
+    font-size: 25px;
+    color: aliceblue;
+    border-bottom: 2px solid #3882f6;
+}
+
+
+/* End of Header */
+
+/* Start of Intro */
 
 .intro {
+    position: relative;
     background-color: #ffffff50;
     display: flex;
     flex-direction: column;
@@ -61,58 +99,100 @@ a {
     /* flex: 1; */
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1f2937;
-    color: aliceblue;
-    font-size: medium;
-    flex-shrink: 0;
-    height: 50px;
-    margin-top: auto;
-
+.intro>p {
+    font-size: 18px;
 }
 
+.intro>button {
+    background-color: #3882f6;
+    border-color: #3882f6;
+}
+
+.intro>button:hover {
+    border-color: aliceblue;
+    background-color: aliceblue;
+    color: #3882f6;
+}
+
+/* End of Intro */
+
+/* Start of Popular Choices Section */
+
+main {
+    position: relative;
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.301);
+    text-align: center;
+    color: rgba(240, 248, 255, 0.774);
+}
+
+.popular img {
+    width: 250px;
+    height: 250px;
+    border-style: solid;
+    border-radius: 2em;
+    transition: all 1s;
+}
+
+.popular img:hover {
+    width: 260px;
+    height: 260px;
+    border-color: #00cdfe;
+    cursor: pointer;
+}
+
+.popular img:hover+p {
+    color: #00cdfe;
+    font-size: 32px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 34px;
+    /* margin-bottom: 50px; */
+}
+
+.popular {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.popular p {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: light;
+    transition: all 1s;
+}
+
+/* End of Popular Choices Section */
+
+
+
 .review {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #e5e7eb96;
-    font-size: 24px;
+    font-size: 36px;
     font-style: italic;
     font-weight: lighter;
     color: #1f2937;
-    flex: 1 1;
-
 }
 
 .review-text {
     max-width: 60vw;
 }
 
-main {
-    display: flex;
-    flex: 1 1;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.171);
-}
-
-h2 {
-    text-align: center;
-    font-size: 36px;
-    /* margin-bottom: 50px; */
-}
-
-.popular {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-}
+/* Start of Sign up section */
 
 .sign-cover {
+    position: relative;
     flex: 1 1;
     margin-top: auto;
     background-color: #ffffff50;
@@ -130,18 +210,23 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: auto;
+    margin: 40px auto;
     gap: 20em;
     border-radius: 2em;
 }
 
-button {
-    padding: 12px 24px;
+/* End of Sign up Section */
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
     color: aliceblue;
-    background-color: inherit;
-    border-color: aliceblue;
-    border-radius: 1em;
-    border-style: solid;
-    font-size: 18px;
+    font-size: medium;
+    flex-shrink: 0;
+    height: 50px;
+    margin-top: auto;
 
 }
