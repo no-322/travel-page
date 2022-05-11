@@ -8,18 +8,24 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     background-color: #1f2937;
-    height: 50px;
+    height: 8vh;
     align-items: center;
     flex-shrink: 0;
 
 
+}
+
+.top {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
@@ -29,9 +35,10 @@ header {
     margin-left: 30px;
 }
 
-img {
-    width: 100px;
-    height: auto;
+.popular img {
+    width: 250px;
+    height: 250px;
+    border-style: solid;
 }
 
 a {
@@ -48,7 +55,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 8px;
+    margin: 10vh 5vw;
     padding: 12px;
     border-radius: 20em;
     /* flex: 1; */
@@ -68,14 +75,41 @@ footer {
 }
 
 .review {
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e7eb96;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937;
     flex: 1 1;
+
+}
+
+.review-text {
+    max-width: 60vw;
 }
 
 main {
     display: flex;
     flex: 1 1;
-    justify-content: space-between;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.171);
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    /* margin-bottom: 50px; */
+}
+
+.popular {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
 }
 
 .sign-cover {
