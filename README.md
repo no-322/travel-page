@@ -1,2 +1,2 @@
 # travel-page
-Home page for a travel agency
+In this project I created a home page for a travel agency. Through implementation of this project I learnt to implement flexbox to properly align my page. I also learnt to align certain sections to fit the page when scrolling. In this project I have also implemented smooth transitions and a video background. This project was done through practice CSS without using frameworks like bootstrap and does not contain any JS.
